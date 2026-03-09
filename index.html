@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordanian Flag Day</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;600;800&family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Premium Top Nav -->
+    <nav class="premium-nav">
+        <div class="logo">Jordan Flag Day</div>
+        <div class="nav-controls">
+            <button id="lang-toggle" class="nav-btn">عربي</button>
+        </div>
+    </nav>
+
+    <!-- Full Screen Interactive Flag Container -->
+    <main class="flag-container">
+        <!-- 1. Black Stripe -->
+        <div class="stripe black-stripe" data-section="black">
+            <div class="stripe-bg"></div>
+            <div class="stripe-content">
+                <h2 class="section-title">Black</h2>
+                <p class="section-subtitle">Abbasid Caliphate</p>
+                <span class="discover-text">Discover <span class="arrow">→</span></span>
+            </div>
+        </div>
+        
+        <!-- 2. White Stripe -->
+        <div class="stripe white-stripe" data-section="white">
+            <div class="stripe-bg"></div>
+            <div class="stripe-content">
+                <h2 class="section-title">White</h2>
+                <p class="section-subtitle">Umayyad Caliphate</p>
+                <span class="discover-text">Discover <span class="arrow">→</span></span>
+            </div>
+        </div>
+        
+        <!-- 3. Green Stripe -->
+        <div class="stripe green-stripe" data-section="green">
+            <div class="stripe-bg"></div>
+            <div class="stripe-content">
+                <h2 class="section-title">Green</h2>
+                <p class="section-subtitle">Fatimid Caliphate</p>
+                <span class="discover-text">Discover <span class="arrow">→</span></span>
+            </div>
+        </div>
+
+        <!-- 4. Red Triangle (Chevron) with Star -->
+        <div class="red-triangle" data-section="red">
+            <!-- Background element for texture -->
+            <div class="triangle-bg"></div>
+            
+            <div class="star-container">
+                <svg class="seven-point-star" viewBox="0 0 100 100" aria-label="Seven-pointed white star">
+                    <polygon points="50,2 62,35 98,38 72,59 79,94 50,75 21,94 28,59 2,38 38,35" fill="white" />
+                </svg>
+            </div>
+            <div class="triangle-content">
+                <h2 class="section-title">Red & Star</h2>
+                <p class="section-subtitle">Hashemite Dynasty</p>
+                <span class="discover-text">Discover <span class="arrow">→</span></span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Premium Fullscreen Reveal Modal -->
+    <div class="premium-modal" id="details-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-wrapper">
+            <button class="close-modal" id="close-modal" aria-label="Close details">
+                <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            
+            <div class="modal-grid">
+                <!-- Left: Hero image revealing upwards -->
+                <div class="modal-image-col">
+                    <div class="image-reveal-wrapper">
+                        <img src="" alt="Historical Scene" id="modal-img" class="modal-hero-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+
+                <!-- Right: Information with staggered text animation -->
+                <div class="modal-content-col">
+                    <div class="content-scroll">
+                        <span id="modal-tag" class="modal-tag">Section</span>
+                        <h1 id="modal-title" class="modal-main-title">Title</h1>
+                        <div class="modal-divider"></div>
+                        <p id="modal-desc" class="modal-body-text">Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
